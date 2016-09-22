@@ -10,19 +10,36 @@ class MyWXBot(WXBot):
     def handle_msg_all(self, msg):
         # print msg
         if msg['msg_type_id'] == 3 and msg['content']['type'] == 0:
-            # print '*********************'
-            # print self.group_list
+            """
+            {
+                'content': {
+                    'data': u'aa', 
+                    'desc': u'aa', 
+                    'type': 0, 
+                    'user': {
+                        'id': u'@10ac71277ce6f3c76763a1302830361c2d8215d9a95441d3742cfc4391c82b8d',  //from user id
+                        'name': u'\u81ea\u5df1\u597d\u53e5'
+                    }, 
+                    'detail': [{'type': 'str', 'value': u'aa'}]
+                }, 
+                'msg_id': u'2185443169392681243', 
+                'msg_type_id': 3, 
+                'to_user_id': u'@9f6b3f26463c348f0b10bf6cc61a031a',  //my id
+                'user': {
+                    'id': u'@@9f41ee170abc31fd5f17c1c0c4f2bde3adf49b81bfa19bbdfae900547242f627', //from group user id
+                    'name': u'\u6d4b\u8bd5\u7528'
+                }
+            }
+            """
             groupUsername = msg['user']['id']
             if(usernameMap.has_key(groupUsername)):
                 if(usernameMap[groupUsername][1].get() == True):
-                    print usernameMap[groupUsername][0], msg['content']['data']
-
-            # print 'msg[to_user_id]', msg['to_user_id']
-            # for group in self.group_list:
-            #     print group
-            #     if group['UserName'] == msg['user']['id']:
-            #         print 'nickname,', group['NickName']
-            # print msg['content']['data']
+                    fromUsername = msg["content"]["user"]["id"]
+                    fromUserNickname = msg["content"]["user"]["name"]
+                    fromGroupId = msg["user"]["id"]
+                    fromGroupName = msg["user"]["name"]
+                    sendMsg = "收到你在 " +fromGroupName.encode("utf8")+" 上发的消息 " + msg['content']['data'].encode("utf8") 
+                    self.send_msg_by_uid(sendMsg, fromUsername)
         
 
     def get_contact(self):
@@ -52,7 +69,7 @@ def printItem():
 
 def addMenu():
     try:
-        print 'create new menu'
+        # print 'create new menu'
         for k, v in usernameMap.items():
             nickname = usernameMap[k][0]
             if usernameMap[k][1] == None:
