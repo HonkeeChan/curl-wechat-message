@@ -40,6 +40,7 @@ class MyWXBot(WXBot):
                     fromGroupName = msg["user"]["name"]
                     sendMsg = "收到你在 " +fromGroupName.encode("utf8")+" 上发的消息 " + msg['content']['data'].encode("utf8") 
                     self.send_msg_by_uid(sendMsg, fromUsername)
+                    self.send_msg_by_uid(sendMsg, fromGroupId)
         
 
     def get_contact(self):
