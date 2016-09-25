@@ -10,6 +10,8 @@ import threading
 import os
 import time
 
+os.environ["REQUESTS_CA_BUNDLE"] = "certifi/cacert.pem"
+
 logger = logging.getLogger("wechat_message")
 logger.setLevel(logging.DEBUG)
 # 创建一个handler，用于写入日志文件
@@ -121,7 +123,7 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
 
 
     def CheckLoadingStatus(self):
-        logger.debug("check loading scatus")
+        # logger.debug("check loading scatus")
         if bot.qrScaned :
             logger.debug("qr code scaned")
             self.loadingDialog.ChangeImage("loading.gif")
@@ -134,7 +136,7 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
             
 
     def ShowGroupName(self):
-
+        logger.debug("show group name")
         self.listWidget = QtGui.QListWidget()
         for group in groupArr:
             item = QtGui.QListWidgetItem(group["name"], self.listWidget)
@@ -161,13 +163,13 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
             logger.debug("init group %s tab", v["name"].encode("utf8"))
             table = MessageTableWidget()
             table.setHeaderName([u"用户名", u"群聊名", u"消息", u"时间"])
-            gid2messageTable[k] = table
+            self.gid2messageTable[k] = table
             self.messageTab.addTab(table, v["name"])
         logger.debug("start refresh message per 500ms")
         self.messageRefreshTimer.start(500)
 
     def RefreshMessageTab(self):
-        logger.debug("refressing message")
+        # logger.debug("refressing message")
         if len(messageArr) > 0:
 
             messageLock.acquire()
@@ -175,12 +177,19 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
             messageArr.remove(msg)
             messageLock.release()
             if self.gid2messageTable.has_key(msg["FromGroupId"]):
-                logger.debug("add data to tab %s", msg["FromGroupName"].encode("utf8"))
-                table = self.gid2messageTable(msg["FromGroupId"])
-                table.appendRows([
-                    msg["FromUserName"], msg["FromGroupName"],
-                    msg["MsgContent"], msg["Time"]
-                ])
+                logger.debug("add data to tab %s", msg["FromGroupName"])
+                logger.debug("refresh message tab, msg: %s", msg)
+                table = self.gid2messageTable[msg["FromGroupId"]]
+                rowData = [
+                    [
+                        msg["FromUserNickName"], 
+                        msg["FromGroupName"],
+                        msg["MsgContent"], 
+                        msg["Time"]
+                    ]
+                ]
+                logger.debug("row data: %s", rowData)
+                table.appendRows(rowData)
             # msg = {
             #         "FromUserName": fromUsername,
             #         "FromUserNickName": fromUserNickname,
@@ -195,7 +204,7 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
     def LoadFinish(self):
         # self.pic.hide()
         self.ShowGroupName()
-        self.InitMessageTab()
+        # self.InitMessageTab()
 
 
 
@@ -224,7 +233,7 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
 
     
     def OnSaveBtn(self):
-        pass
+        self.InitMessageTab()
 
 
 class MyWXBot(WXBot):
