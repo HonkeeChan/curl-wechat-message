@@ -72,6 +72,9 @@ class WXBot:
         self.sync_key_str = ''
         self.sync_key = []
         self.sync_host = ''
+        self.run_flag = True
+        self.qrScaned = False
+        self.contactLoaded = False
 
         #文件缓存目录
         self.temp_pwd  =  os.path.join(os.getcwd(),'temp')
@@ -607,7 +610,7 @@ class WXBot:
 
     def proc_msg(self):
         self.test_sync_check()
-        while True:
+        while True and self.run_flag:
             check_time = time.time()
             try:
                 [retcode, selector] = self.sync_check()
@@ -965,7 +968,7 @@ class WXBot:
         else:
             print '[ERROR] Web WeChat login failed .'
             return
-
+        self.qrScaned = True
         if self.init():
             print '[INFO] Web WeChat init succeed .'
         else:
@@ -975,6 +978,7 @@ class WXBot:
         self.get_contact()
         print '[INFO] Get %d contacts' % len(self.contact_list)
         print '[INFO] Start to process messages .'
+        self.contactLoaded = True
         self.proc_msg()
 
     def get_uuid(self):
@@ -1001,7 +1005,7 @@ class WXBot:
         qr = pyqrcode.create(string)
         if self.conf['qr'] == 'png':
             qr.png(qr_file_path, scale=8)
-            show_image(qr_file_path)
+            # show_image(qr_file_path)
             # img = Image.open(qr_file_path)
             # img.show()
         elif self.conf['qr'] == 'tty':

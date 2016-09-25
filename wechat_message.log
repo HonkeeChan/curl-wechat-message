@@ -1,0 +1,466 @@
+2016-09-24 16:39:18,398 main.py[line:142] INFO select group map: {u'@@605dc332819cd27e3209a140602681e3832814912d3de7b73b4eae8e2d19b40b': {'config': {}, 'name': u'418\u53f3\u5ba4\u2014\u2014\u5317\u4e0a\u5e7f'}}
+2016-09-24 16:39:19,056 main.py[line:142] INFO select group map: {u'@@4334c2c3feb10d53fbee48ecfa95b4e44be9ceb7f1555bcb1f7107fc5892b41a': {'config': {}, 'name': u'\u5e26\u4f60\u88c5\u903c\u5e26\u4f60\u98de'}, u'@@605dc332819cd27e3209a140602681e3832814912d3de7b73b4eae8e2d19b40b': {'config': {}, 'name': u'418\u53f3\u5ba4\u2014\u2014\u5317\u4e0a\u5e7f'}}
+2016-09-24 16:39:31,877 main.py[line:142] INFO select group map: {u'@@4334c2c3feb10d53fbee48ecfa95b4e44be9ceb7f1555bcb1f7107fc5892b41a': {'config': {}, 'name': u'\u5e26\u4f60\u88c5\u903c\u5e26\u4f60\u98de'}, u'@@605dc332819cd27e3209a140602681e3832814912d3de7b73b4eae8e2d19b40b': {'config': {}, 'name': u'418\u53f3\u5ba4\u2014\u2014\u5317\u4e0a\u5e7f'}, u'@@d528b612f121b447574c85912a20b496bdd65be42ba752ddca766b9fac1bd0f4': {'config': {}, 'name': u'418~'}}
+2016-09-24 16:39:39,064 main.py[line:142] INFO select group map: {u'@@aa1abc35a6a25095b0cc6efdd6e0e5e87907a5449afd3dfe0b6599f0853e8e3d': {'config': {}, 'name': u'\u4ec0\u4e48\u9b3c\uff1f'}, u'@@4334c2c3feb10d53fbee48ecfa95b4e44be9ceb7f1555bcb1f7107fc5892b41a': {'config': {}, 'name': u'\u5e26\u4f60\u88c5\u903c\u5e26\u4f60\u98de'}, u'@@605dc332819cd27e3209a140602681e3832814912d3de7b73b4eae8e2d19b40b': {'config': {}, 'name': u'418\u53f3\u5ba4\u2014\u2014\u5317\u4e0a\u5e7f'}, u'@@d528b612f121b447574c85912a20b496bdd65be42ba752ddca766b9fac1bd0f4': {'config': {}, 'name': u'418~'}}
+2016-09-24 16:41:28,409 main.py[line:142] INFO select group map: {u'@@aa1abc35a6a25095b0cc6efdd6e0e5e87907a5449afd3dfe0b6599f0853e8e3d': {'config': {}, 'name': u'\u4ec0\u4e48\u9b3c\uff1f'}, u'@@4334c2c3feb10d53fbee48ecfa95b4e44be9ceb7f1555bcb1f7107fc5892b41a': {'config': {}, 'name': u'\u5e26\u4f60\u88c5\u903c\u5e26\u4f60\u98de'}, u'@@605dc332819cd27e3209a140602681e3832814912d3de7b73b4eae8e2d19b40b': {'config': {}, 'name': u'418\u53f3\u5ba4\u2014\u2014\u5317\u4e0a\u5e7f'}, u'@@75ab0f74cb03a2f6e02c4b4eb399ad4d9d61e2d7b5a3b80ab2010c1cca438d9b': {'config': {}, 'name': u'\u6d4b\u8bd5\u7528'}, u'@@d528b612f121b447574c85912a20b496bdd65be42ba752ddca766b9fac1bd0f4': {'config': {}, 'name': u'418~'}}
+2016-09-24 16:53:24,096 main.py[line:142] INFO select group map: {u'@@021de62771299e0ae8343846241ba2add24e95988112ec29e7a993d3f5d2f52c': {'config': {}, 'name': u'\u7a0b\u5e8f\u7ec4'}}
+2016-09-24 16:53:25,396 main.py[line:142] INFO select group map: {u'@@021de62771299e0ae8343846241ba2add24e95988112ec29e7a993d3f5d2f52c': {'config': {}, 'name': u'\u7a0b\u5e8f\u7ec4'}, u'@@62d4c872730faa231c2b55352f44a9fedce57cfa669ad5e846d4e0aa7001da09': {'config': {}, 'name': u'\u4ec0\u4e48\u9b3c\uff1f'}}
+2016-09-24 16:57:01,853 main.py[line:142] INFO select group map: {}
+2016-09-24 17:25:35,147 main.py[line:99] DEBUG show qr code
+2016-09-24 17:26:34,876 main.py[line:99] DEBUG show qr code
+2016-09-24 17:26:34,880 main.py[line:102] DEBUG qr code exist
+2016-09-24 17:28:30,145 main.py[line:99] DEBUG show qr code
+2016-09-24 17:28:30,149 main.py[line:102] DEBUG qr code exist
+2016-09-24 17:31:17,703 main.py[line:99] DEBUG show qr code
+2016-09-24 17:31:17,708 main.py[line:102] DEBUG qr code exist
+2016-09-24 17:53:10,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:10,829 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:11,329 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:11,829 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:12,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:12,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:13,329 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:13,829 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:14,329 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:14,829 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:15,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:15,829 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:16,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:16,829 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:17,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:17,473 main.py[line:102] DEBUG show qr code
+2016-09-24 17:53:17,477 main.py[line:105] DEBUG qr code exist
+2016-09-24 17:53:17,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:18,329 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:18,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:19,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:19,829 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:20,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:20,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:21,329 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:21,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:22,329 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:22,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:23,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:23,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:24,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:24,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:25,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:25,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:26,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:26,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:27,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:27,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:28,329 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:28,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:29,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:29,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:30,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:30,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:31,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:31,829 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:32,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:32,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:33,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:33,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:34,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:34,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:35,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:35,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:36,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:36,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:37,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:37,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:38,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:38,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:39,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:39,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:40,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:40,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:40,830 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:41,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:41,331 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:41,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:41,831 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:42,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:42,330 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:42,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:42,831 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:43,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:43,331 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:43,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:43,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:43,831 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:43,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:44,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:44,331 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:44,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:44,830 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:44,830 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:44,831 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:45,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:45,331 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:45,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:45,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:45,831 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:45,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:46,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:46,331 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:46,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:46,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:46,831 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:46,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:47,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:47,331 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:47,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:47,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:47,831 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:47,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:48,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:48,331 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:48,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:48,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:48,831 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:48,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:49,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:49,331 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:49,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:49,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:49,831 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:49,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:50,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:50,331 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:50,331 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:50,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:50,831 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:50,831 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:51,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:51,332 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:51,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:51,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:51,832 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:51,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:52,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:52,332 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:52,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:52,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:52,832 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:52,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:53,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:53,332 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:53,333 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:53,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:53,832 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:53,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:54,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:54,331 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:54,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:54,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:54,832 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:54,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:55,331 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:55,331 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:55,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:55,832 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:55,832 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:55,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:56,332 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:56,332 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:56,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:56,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:56,831 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:56,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:57,330 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:57,331 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:57,331 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:58,332 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:58,332 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:58,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:58,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:58,831 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:58,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:59,332 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:59,332 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:59,333 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:53:59,832 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:53:59,832 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:53:59,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:54:00,332 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:54:00,332 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:54:00,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:54:00,832 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:54:00,832 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:54:00,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:54:01,332 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:54:01,332 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:54:01,332 main.py[line:118] DEBUG contact loaded
+2016-09-24 17:54:01,831 main.py[line:113] DEBUG check loading scatus
+2016-09-24 17:54:01,832 main.py[line:115] DEBUG qr code scaned
+2016-09-24 17:54:01,832 main.py[line:118] DEBUG contact loaded
+2016-09-24 18:22:03,051 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:03,051 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:03,552 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:03,552 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:04,051 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:04,051 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:04,552 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:04,552 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:05,051 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:05,051 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:05,551 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:05,551 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:06,052 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:06,052 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:06,552 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:06,552 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:07,052 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:07,052 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:07,552 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:07,552 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:08,051 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:08,052 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:08,551 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:08,551 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:09,058 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:09,058 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:09,551 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:09,551 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:10,052 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:10,052 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:22:10,552 main.py[line:115] DEBUG check loading scatus
+2016-09-24 18:22:10,552 main.py[line:117] DEBUG qr code scaned
+2016-09-24 18:23:35,093 main.py[line:104] DEBUG show qr code
+2016-09-24 18:23:35,095 main.py[line:112] ERROR 不能获取二维码
+2016-09-24 18:24:44,609 main.py[line:104] DEBUG show qr code
+2016-09-24 18:24:44,611 main.py[line:112] ERROR 不能获取二维码
+2016-09-24 21:43:21,689 main.py[line:104] DEBUG show qr code
+2016-09-24 21:43:21,694 main.py[line:112] ERROR 不能获取二维码
+2016-09-24 21:44:51,378 main.py[line:233] DEBUG clear wx qr code
+2016-09-24 21:44:56,278 main.py[line:104] DEBUG show qr code
+2016-09-24 21:44:56,280 main.py[line:107] DEBUG qr code exist
+2016-09-24 21:44:56,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:44:56,794 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:44:57,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:44:57,294 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:44:57,793 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:44:57,794 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:44:58,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:44:58,294 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:44:58,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:44:58,794 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:44:59,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:44:59,294 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:44:59,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:44:59,794 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:00,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:00,294 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:00,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:00,794 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:01,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:01,294 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:01,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:01,794 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:02,293 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:02,293 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:02,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:02,794 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:03,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:03,294 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:03,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:03,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:04,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:04,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:04,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:04,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:05,293 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:05,294 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:05,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:05,794 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:06,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:06,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:06,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:06,794 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:07,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:07,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:07,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:07,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:08,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:08,294 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:08,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:08,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:09,295 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:09,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:09,795 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:09,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:10,295 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:10,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:10,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:10,794 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:11,295 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:11,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:11,795 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:11,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:12,295 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:12,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:12,795 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:12,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:13,295 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:13,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:13,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:13,794 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:14,295 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:14,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:14,795 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:14,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:15,295 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:15,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:15,795 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:15,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:16,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:16,294 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:16,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:16,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:17,295 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:17,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:17,795 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:17,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:18,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:18,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:18,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:18,794 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:19,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:19,294 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:19,795 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:19,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:20,295 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:20,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:20,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:20,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:21,295 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:21,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:21,795 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:21,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:22,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:22,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:22,795 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:22,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:23,295 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:23,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:23,795 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:23,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:24,295 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:24,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:24,794 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:24,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:25,295 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:25,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:25,795 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:25,795 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:26,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:26,294 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:26,795 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:26,796 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:27,294 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:27,295 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:45:27,795 main.py[line:117] DEBUG check loading scatus
+2016-09-24 21:45:27,796 main.py[line:119] DEBUG qr code scaned
+2016-09-24 21:46:39,430 main.py[line:231] DEBUG clear wx qr code
+2016-09-24 21:46:43,885 main.py[line:102] DEBUG show qr code
+2016-09-24 21:46:43,887 main.py[line:105] DEBUG qr code exist
+2016-09-24 21:46:44,892 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:45,891 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:46,892 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:47,891 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:48,891 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:49,892 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:50,892 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:51,892 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:52,892 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:53,892 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:54,892 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:54,892 main.py[line:117] DEBUG qr code scaned
+2016-09-24 21:46:55,892 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:55,893 main.py[line:117] DEBUG qr code scaned
+2016-09-24 21:46:56,891 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:56,892 main.py[line:117] DEBUG qr code scaned
+2016-09-24 21:46:57,892 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:57,893 main.py[line:117] DEBUG qr code scaned
+2016-09-24 21:46:58,892 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:46:58,892 main.py[line:117] DEBUG qr code scaned
+2016-09-24 21:46:58,892 main.py[line:121] DEBUG contact loaded
+2016-09-24 21:52:16,239 main.py[line:232] DEBUG clear wx qr code
+2016-09-24 21:52:45,121 main.py[line:102] DEBUG show qr code
+2016-09-24 21:52:45,124 main.py[line:105] DEBUG qr code exist
+2016-09-24 21:52:46,128 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:52:47,128 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:52:48,128 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:52:49,128 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:52:50,127 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:52:51,128 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:52:52,128 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:52:53,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:52:54,128 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:52:55,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:52:56,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:52:57,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:52:58,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:52:59,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:00,128 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:01,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:02,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:03,128 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:04,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:05,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:06,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:07,128 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:08,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:09,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:10,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:11,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:12,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:13,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:14,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:15,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:16,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:17,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:18,130 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:19,130 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:20,130 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:21,130 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:22,130 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:23,130 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:24,130 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:24,130 main.py[line:117] DEBUG qr code scaned
+2016-09-24 21:53:25,129 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:25,130 main.py[line:117] DEBUG qr code scaned
+2016-09-24 21:53:26,130 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:26,130 main.py[line:117] DEBUG qr code scaned
+2016-09-24 21:53:27,130 main.py[line:115] DEBUG check loading scatus
+2016-09-24 21:53:27,130 main.py[line:117] DEBUG qr code scaned
+2016-09-24 21:53:27,130 main.py[line:121] DEBUG contact loaded
+2016-09-24 21:55:19,154 main.py[line:231] DEBUG clear wx qr code
+2016-09-24 21:55:24,353 main.py[line:101] DEBUG show qr code
+2016-09-24 21:55:24,355 main.py[line:104] DEBUG qr code exist
+2016-09-24 21:55:25,360 main.py[line:114] DEBUG check loading scatus
+2016-09-24 21:55:26,360 main.py[line:114] DEBUG check loading scatus
+2016-09-24 21:55:27,359 main.py[line:114] DEBUG check loading scatus
+2016-09-24 21:55:28,360 main.py[line:114] DEBUG check loading scatus
+2016-09-24 21:55:29,360 main.py[line:114] DEBUG check loading scatus
+2016-09-24 21:55:30,360 main.py[line:114] DEBUG check loading scatus
+2016-09-24 21:55:31,360 main.py[line:114] DEBUG check loading scatus
+2016-09-24 21:55:32,360 main.py[line:114] DEBUG check loading scatus
+2016-09-24 21:55:33,359 main.py[line:114] DEBUG check loading scatus
+2016-09-24 21:55:34,360 main.py[line:114] DEBUG check loading scatus
+2016-09-24 21:55:34,360 main.py[line:116] DEBUG qr code scaned
+2016-09-24 21:55:35,360 main.py[line:114] DEBUG check loading scatus
+2016-09-24 21:55:35,360 main.py[line:116] DEBUG qr code scaned
+2016-09-24 21:55:36,360 main.py[line:114] DEBUG check loading scatus
+2016-09-24 21:55:36,360 main.py[line:116] DEBUG qr code scaned
+2016-09-24 21:55:37,359 main.py[line:114] DEBUG check loading scatus
+2016-09-24 21:55:37,360 main.py[line:116] DEBUG qr code scaned
+2016-09-24 21:55:37,360 main.py[line:120] DEBUG contact loaded
+2016-09-24 22:04:33,757 main.py[line:240] DEBUG clear wx qr code
+2016-09-24 22:04:50,673 main.py[line:101] DEBUG show qr code
+2016-09-24 22:04:50,676 main.py[line:109] ERROR 不能获取二维码
+2016-09-24 22:05:41,717 main.py[line:101] DEBUG show qr code
+2016-09-24 22:05:41,720 main.py[line:109] ERROR 不能获取二维码

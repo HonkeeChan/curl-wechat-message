@@ -2,8 +2,11 @@
 import sys
 from PyQt4 import QtCore, QtGui, uic
 from PyQt4.QtCore import Qt
+from wxbot import *
+from loading_modal_dialog import LoadingDialog
 import logging
 import threading
+import os
 
 logger = logging.getLogger("wechat_message")
 logger.setLevel(logging.DEBUG)
@@ -70,6 +73,7 @@ class LoginWindow(QtGui.QDialog, Login_Ui_Dialog):
         print("password: %s" % self.passwordInput.text())
         self.hide()
         self.mainWindow.show()
+        self.mainWindow.ShowQr()
 
 # class GroupNameLabel(QtGui.QLabel):
 #     def __init__(self):
@@ -83,23 +87,51 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
         self.loginWindow = LoginWindow(self)
         self.hide()
         self.loginWindow.show()
-        self.ShowQr()
-        self.loadBtn.clicked.connect(self.OnLoadFinish)
         self.saveBtn.clicked.connect(self.OnSaveBtn)
         self.preSelectIdx = -1
+        self.timer = QtCore.QTimer()
+        self.timer.timeout.connect(self.CheckLoadingStatus)
+        
 
     def ShowQr(self):
-        self.pic = QtGui.QLabel(self)
-        pixmap = QtGui.QPixmap("wxqr.png")
-        self.pic.setPixmap(pixmap)
-        self.pic.resize(pixmap.width(), pixmap.height())
+        # self.pic = QtGui.QLabel(self)
+        # pixmap = QtGui.QPixmap("wxqr.png")
+        # self.pic.setPixmap(pixmap)
+        # self.pic.resize(pixmap.width(), pixmap.height())
+        logger.debug("show qr code")
+        self.loadingDialog = LoadingDialog()
+        if os.path.exists("temp/wxqr.png"):
+            logger.debug("qr code exist")
+            self.loadingDialog.ChangeImage("temp/wxqr.png")
+            self.timer.start(1000)
+            self.loadingDialog.exec_()
+        else:
+            logger.error("不能获取二维码")
+            # 请检查你的网络
+            msgBox = QtGui.QMessageBox()
+            msgBox.setText(u"请检查你的网络")
+            msgBox.exec_()
+            self.close()
 
+
+    def CheckLoadingStatus(self):
+        logger.debug("check loading scatus")
+        if bot.qrScaned :
+            logger.debug("qr code scaned")
+            self.loadingDialog.ChangeImage("loading.gif")
+        if bot.contactLoaded:
+            self.contactLoaded = True
+            logger.debug("contact loaded")
+            self.timer.stop()
+            self.loadingDialog.done(0)
+            self.LoadFinish()
+            
 
     def ShowGroupName(self):
 
         self.listWidget = QtGui.QListWidget()
         for group in groupArr:
-            item = QtGui.QListWidgetItem(group["name"].decode("utf8"), self.listWidget)
+            item = QtGui.QListWidgetItem(group["name"], self.listWidget)
             item.setFlags(Qt.ItemIsUserCheckable | Qt.ItemIsEnabled | Qt.ItemIsSelectable)
             item.setCheckState(Qt.Unchecked)
             self.listWidget.addItem(item)
@@ -140,12 +172,13 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
 
         logger.info("select group map: %s", selectGroupMap)
 
-    def OnLoadFinish(self):
-        self.pic.hide()
+    def LoadFinish(self):
+        # self.pic.hide()
         self.ShowGroupName()
 
     def OnSaveBtn(self):
         pass
+
 
 class MyWXBot(WXBot):
     def handle_msg_all(self, msg):
@@ -187,20 +220,28 @@ class MyWXBot(WXBot):
         print 'MyWxBot get contact'
         WXBot.get_contact(self)
         for group in self.group_list:
-            groupArr.apend({"id": group["UserName"], "name": group["NickName"]})
-  
+            groupArr.append({"id": group["UserName"], "name": group["NickName"]})
+
 
 def mybot():
-
+    global bot
+    global botThreadRuning
+    botThreadRuning = True
     bot = MyWXBot()
-    bot.DEBUG = True
+    bot.DEBUG = False
     bot.conf['qr'] = 'png'
     bot.run()
+    botThreadRuning = False
+
 
 if __name__ == "__main__":
+    if os.path.exists("temp/wxqr.png"):
+        os.remove("temp/wxqr.png")
+        logger.debug("clear wx qr code")
     wxBotThread = threading.Thread(target = mybot)
     wxBotThread.start()
 
     app = QtGui.QApplication(sys.argv)
     mainWindow = MainWindow()
-    sys.exit(app.exec_())
+    app.exec_()
+    bot.run_flag = False

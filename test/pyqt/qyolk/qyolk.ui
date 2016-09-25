@@ -1,0 +1,71 @@
+<ui version="4.0" >
+ <class>QYolk</class>
+ <widget class="QMainWindow" name="QYolk" >
+  <property name="windowModality" >
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>501</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>QYolk</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>waaaht-7.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QGridLayout" >
+    <property name="margin" >
+     <number>9</number>
+    </property>
+    <property name="spacing" >
+     <number>6</number>
+    </property>
+    <item row="0" column="0" >
+     <widget class="QLabel" name="InfoLabel" >
+      <property name="text" >
+       <string>&lt;b>QYolk&lt;/b>: Browsing all installed cheeseshop packages</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" >
+     <widget class="QTreeWidget" name="treeList" >
+      <column>
+       <property name="text" >
+        <string>Package Name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Version</string>
+       </property>
+      </column>
+      <column>
+       <property name="text" >
+        <string>Status</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>501</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
