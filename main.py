@@ -4,9 +4,11 @@ from PyQt4 import QtCore, QtGui, uic
 from PyQt4.QtCore import Qt
 from wxbot import *
 from loading_modal_dialog import LoadingDialog
+from tab import MessageTableWidget
 import logging
 import threading
 import os
+import time
 
 logger = logging.getLogger("wechat_message")
 logger.setLevel(logging.DEBUG)
@@ -52,7 +54,8 @@ selectGroupMap = {}
 #         "id": 2
 #     }
 # }
-messageMap = {}
+messageArr = []
+messageLock = threading.Lock()
 
 loginUIFile = "login.ui" # Enter file here.
 mainUIFile = "main_window.ui"
@@ -92,7 +95,9 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
         self.preSelectIdx = -1
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self.CheckLoadingStatus)
-        
+
+        self.messageRefreshTimer = QtCore.QTimer()
+        self.messageRefreshTimer.timeout.connect(self.RefreshMessageTab)
 
     def ShowQr(self):
         # self.pic = QtGui.QLabel(self)
@@ -149,6 +154,50 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
                 config = selectGroupMap[groupId]["config"]
                 config["id"] = self.configId.text()
 
+    def InitMessageTab(self):
+        logger.debug("init message tab")
+        self.gid2messageTable = {}
+        for k, v in selectGroupMap.items():
+            logger.debug("init group %s tab", v["name"].encode("utf8"))
+            table = MessageTableWidget()
+            table.setHeaderName([u"用户名", u"群聊名", u"消息", u"时间"])
+            gid2messageTable[k] = table
+            self.messageTab.addTab(table, v["name"])
+        logger.debug("start refresh message per 500ms")
+        self.messageRefreshTimer.start(500)
+
+    def RefreshMessageTab(self):
+        logger.debug("refressing message")
+        if len(messageArr) > 0:
+
+            messageLock.acquire()
+            msg = messageArr[0]
+            messageArr.remove(msg)
+            messageLock.release()
+            if self.gid2messageTable.has_key(msg["FromGroupId"]):
+                logger.debug("add data to tab %s", msg["FromGroupName"].encode("utf8"))
+                table = self.gid2messageTable(msg["FromGroupId"])
+                table.appendRows([
+                    msg["FromUserName"], msg["FromGroupName"],
+                    msg["MsgContent"], msg["Time"]
+                ])
+            # msg = {
+            #         "FromUserName": fromUsername,
+            #         "FromUserNickName": fromUserNickname,
+            #         "FromGroupId": fromGroupId,
+            #         "FromGroupName": fromGroupName,
+            #         "MsgContent": content
+            #         "Time": time.strftime("%y-%m-%d %H:%M:%S")
+            #     }
+        
+        
+
+    def LoadFinish(self):
+        # self.pic.hide()
+        self.ShowGroupName()
+        self.InitMessageTab()
+
+
 
     def OnListWidgetRowChanged(self, idx):
         self.SaveConfig()
@@ -173,10 +222,7 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
 
         logger.info("select group map: %s", selectGroupMap)
 
-    def LoadFinish(self):
-        # self.pic.hide()
-        self.ShowGroupName()
-
+    
     def OnSaveBtn(self):
         pass
 
@@ -212,7 +258,20 @@ class MyWXBot(WXBot):
                 fromUserNickname = msg["content"]["user"]["name"]
                 fromGroupId = msg["user"]["id"]
                 fromGroupName = msg["user"]["name"]
-                sendMsg = "收到你在 " +fromGroupName.encode("utf8")+" 上发的消息 " + msg['content']['data'].encode("utf8") 
+                sendMsg = u"收到你在 " +fromGroupName + u" 上发的消息 " + \
+                        msg['content']['data']
+                msg = {
+                    "FromUserName": fromUsername,
+                    "FromUserNickName": fromUserNickname,
+                    "FromGroupId": fromGroupId,
+                    "FromGroupName": fromGroupName,
+                    "MsgContent": msg['content']['data'],
+                    "Time": time.strftime("%y-%m-%d %H:%M:%S")
+                }
+                
+                messageLock.acquire()
+                messageArr.append(msg)
+                messageLock.release()
                 self.send_msg_by_uid(sendMsg, fromUsername)
                 self.send_msg_by_uid(sendMsg, fromGroupId)
         
