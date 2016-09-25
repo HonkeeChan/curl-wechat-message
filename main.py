@@ -52,6 +52,7 @@ selectGroupMap = {}
 #         "id": 2
 #     }
 # }
+messageMap = {}
 
 loginUIFile = "login.ui" # Enter file here.
 mainUIFile = "main_window.ui"
