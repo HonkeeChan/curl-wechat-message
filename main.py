@@ -81,6 +81,10 @@ class LoginWindow(QtGui.QDialog, Login_Ui_Dialog):
         self.mainWindow.show()
         self.mainWindow.ShowQr()
 
+    def closeEvent(self, event):
+        logger.debug("before close event")
+        CloseMyBot()
+        # QtGui.QDialog.closeEvent(self, event)
 # class GroupNameLabel(QtGui.QLabel):
 #     def __init__(self):
 #         QtGui.QLabel.__init__(self)
@@ -97,9 +101,12 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
         self.preSelectIdx = -1
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self.CheckLoadingStatus)
-
         self.messageRefreshTimer = QtCore.QTimer()
         self.messageRefreshTimer.timeout.connect(self.RefreshMessageTab)
+
+    def closeEvent(self, event):
+        logger.info("before close event")
+        CloseMyBot()
 
     def ShowQr(self):
         # self.pic = QtGui.QLabel(self)
@@ -281,8 +288,8 @@ class MyWXBot(WXBot):
                 messageLock.acquire()
                 messageArr.append(msg)
                 messageLock.release()
-                self.send_msg_by_uid(sendMsg, fromUsername)
-                self.send_msg_by_uid(sendMsg, fromGroupId)
+                # self.send_msg_by_uid(sendMsg, fromUsername)
+                # self.send_msg_by_uid(sendMsg, fromGroupId)
         
 
     def get_contact(self):
@@ -302,6 +309,8 @@ def mybot():
     bot.run()
     botThreadRuning = False
 
+def CloseMyBot():
+    bot.run_flag = False
 
 if __name__ == "__main__":
     if os.path.exists("temp/wxqr.png"):
@@ -313,4 +322,4 @@ if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
     mainWindow = MainWindow()
     app.exec_()
-    bot.run_flag = False
+    CloseMyBot()

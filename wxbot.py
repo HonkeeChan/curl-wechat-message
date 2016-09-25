@@ -1037,7 +1037,7 @@ class WXBot:
         code = UNKONWN
 
         retry_time = MAX_RETRY_TIMES
-        while retry_time > 0:
+        while retry_time > 0 and self.run_flag:
             url = LOGIN_TEMPLATE % (tip, self.uuid, int(time.time()))
             code, data = self.do_request(url)
             if code == SCANED:
