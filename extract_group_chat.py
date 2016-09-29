@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-
+os.environ["REQUESTS_CA_BUNDLE"] = "certifi/cacert.pem"
 from wxbot import *
 from Tkinter import *
 import threading
