@@ -276,7 +276,46 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
 
 class MyWXBot(WXBot):
     def handle_msg_all(self, msg):
-        # print msg
+        # group message from myself
+        if msg["msg_type_id"] == 1:
+            """
+            {
+                'content': {
+                    'data': u'\u5427', 
+                    'type': 0, 
+                    'detail': [{'type': 'str', 'value': u'\u5427'}], 
+                    'desc': u'\u5427'
+                }, 
+                'msg_id': u'5895725164937869400', 
+                'msg_type_id': 1, 
+                'to_user_id': u'@@92789f84714bb000e1162145e6cd944b1f74cbb266b1d9cb2d5b6241e4c1d441', 
+                'user': {
+                    'id': u'@ffd96f550a4bbed158153ff8029fec7a', 
+                    'name': 'self'
+                }
+            }
+            """
+            
+            fromUsername = msg["user"]["id"]
+            fromUserNickname = u"我"
+            fromGroupId = msg['to_user_id']
+            fromGroupName = u"未知"
+            if(selectGroupMap.has_key(fromGroupId)):
+                fromGroupName = selectGroupMap[fromGroupId]["name"]
+
+            addmsg = {
+                    "FromUserName": fromUsername,
+                    "FromUserNickName": fromUserNickname,
+                    "FromGroupId": fromGroupId,
+                    "FromGroupName": fromGroupName,
+                    "MsgContent": msg['content']['data'],
+                    "Time": time.strftime("%y-%m-%d %H:%M:%S")
+                }
+            messageLock.acquire()
+            messageArr.append(addmsg)
+            messageLock.release()
+
+        # group message from others
         if msg['msg_type_id'] == 3 and msg['content']['type'] == 0:
             """
             {
@@ -307,7 +346,7 @@ class MyWXBot(WXBot):
                 fromGroupName = msg["user"]["name"]
                 sendMsg = u"收到你在 " +fromGroupName + u" 上发的消息 " + \
                         msg['content']['data']
-                msg = {
+                addmsg = {
                     "FromUserName": fromUsername,
                     "FromUserNickName": fromUserNickname,
                     "FromGroupId": fromGroupId,
@@ -317,7 +356,7 @@ class MyWXBot(WXBot):
                 }
                 
                 messageLock.acquire()
-                messageArr.append(msg)
+                messageArr.append(addmsg)
                 messageLock.release()
                 # self.send_msg_by_uid(sendMsg, fromUsername)
                 # self.send_msg_by_uid(sendMsg, fromGroupId)
