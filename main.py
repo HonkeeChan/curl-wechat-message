@@ -175,6 +175,27 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
         logger.debug("start refresh message per 500ms")
         self.messageRefreshTimer.start(500)
 
+    def ChangeMessageTab(self):
+        logger.debug("change message tab")
+
+        # remove tab
+        logger.debug("select group : %s", selectGroupMap)
+        logger.debug("before delete gid2messageTable %s", self.gid2messageTable)
+        for k, v in self.gid2messageTable.items():
+            if not selectGroupMap.has_key(k):
+                tabidx = self.messageTab.indexOf(v)
+                self.messageTab.removeTab(tabidx)
+                logger.debug("remove tab idx %s", tabidx)
+                del self.gid2messageTable[k]
+        logger.debug("after delete gid2messageTable %s", self.gid2messageTable)
+
+        for k, v in selectGroupMap.items():
+            if not self.gid2messageTable.has_key(k):
+                table = MessageTableWidget()
+                table.setHeaderName([u"用户名", u"群聊名", u"消息", u"时间"])
+                self.gid2messageTable[k] = table
+                self.messageTab.addTab(table, v["name"])
+
     def RefreshMessageTab(self):
         # logger.debug("refressing message")
         if len(messageArr) > 0:
@@ -211,7 +232,7 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
     def LoadFinish(self):
         # self.pic.hide()
         self.ShowGroupName()
-        # self.InitMessageTab()
+        self.InitMessageTab()
 
 
 
@@ -228,19 +249,29 @@ class MainWindow(QtGui.QMainWindow, Main_Ui_MainWindow):
 
     def OnListWidgetItemClicked(self, item):
         # 处理勾选的列表
+        tmpSelectGroupMap = {}
         groupCnt = self.listWidget.count()
         for i in range(groupCnt):
             if self.listWidget.item(i).checkState() == Qt.Checked:
-                if not selectGroupMap.has_key(groupArr[i]["id"]):
-                    selectGroupMap[groupArr[i]["id"]] = {}
-                    selectGroupMap[groupArr[i]["id"]]["name"] = groupArr[i]["name"]
-                    config = selectGroupMap[groupArr[i]["id"]]["config"] = {}
+                tmpSelectGroupMap[groupArr[i]["id"]] = {}
+                tmpSelectGroupMap[groupArr[i]["id"]]["name"] = groupArr[i]["name"]
+                tmpSelectGroupMap[groupArr[i]["id"]]["config"] = {}
+
+        # remove delete items
+        for k, v in selectGroupMap.items():
+            if not tmpSelectGroupMap.has_key(k):
+                del selectGroupMap[k]
+        # add new items
+        for k, v in tmpSelectGroupMap.items():
+            if not selectGroupMap.has_key(k):
+                selectGroupMap[k] = v
 
         logger.info("select group map: %s", selectGroupMap)
 
     
     def OnSaveBtn(self):
-        self.InitMessageTab()
+        self.ChangeMessageTab()
+        
 
 
 class MyWXBot(WXBot):
